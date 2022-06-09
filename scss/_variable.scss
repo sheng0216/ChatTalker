@@ -1,0 +1,54 @@
+/*主色設定*/
+$primary:#221E1F;
+$secondary:#56C4C5;
+$gray-100:#DDDDDD;
+$gray-200:#F5F5F5;
+$gray-300:#747474;
+$gray-400:#F7F9FD;
+$yellow:#FFD153;
+$white:#FFFFFF;
+$orange:#FF5D50;
+$blue:#56C4C5;
+/*p段落color*/
+
+/*文字*/
+$font-base:16px;
+/*間距*/
+$base-space:8px;
+/*按鈕*/
+$btn-base-y:12px;
+$btn-base-x:32px;
+/*間距*/
+$base-space:8px;
+/*width*/
+$base-width:40px;
+
+
+
+
+
+
+.container {
+    max-width: 1088px;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.wrap {
+    max-width: 910px;
+    margin: 0 auto;
+
+    @media (max-width:768px) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    @media (max-width:576px) {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+}

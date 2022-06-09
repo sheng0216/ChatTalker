@@ -1,0 +1,126 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &-logo {
+        height: 40px;
+    }
+
+    @media (max-width:768px) {
+        border-bottom: 2px solid $yellow;
+        padding-top: 16px;
+        padding-bottom: 16px;
+
+        &-logo {
+            height: 24px;
+        }
+    }
+}
+
+.card {
+    border-radius: 12px;
+    position: relative;
+    background: white;
+
+    &-img {
+        width: 100%;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+
+    &-footer {
+        padding-top: 24px;
+        border-top: 1px solid #DDDDDD;
+    }
+
+}
+
+/*按鈕*/
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 0;
+    padding: $btn-base-y $btn-base-x;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    word-spacing: normal;
+
+    &-group {
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    @media (max-width:768px) {
+        &-lg {
+            padding: $btn-base-y/1.5 $btn-base-x;
+        }
+    }
+
+    @media (max-width:576px) {
+        &-sm {
+            padding: $btn-base-y/1.5 $btn-base-x/2;
+        }
+    }
+
+
+    &-round {
+        border-radius: $btn-base-x;
+
+    }
+
+    &-primary {
+        background: $secondary;
+
+        &:hover {
+            background: darken($secondary, 20%);
+        }
+    }
+
+    &-warning {
+        background: $orange;
+
+        &:hover {
+            background: darken($orange, 20%);
+        }
+    }
+
+    &-outline-secondary {
+        border: 1px solid $secondary;
+        color: $secondary;
+
+        &:hover {
+            background: $secondary;
+            color: #fff;
+        }
+
+        &:focus {
+            background: $secondary;
+            color: #fff;
+        }
+    }
+}
+
+/*swiper*/
+.swiper {
+    padding-top: 60px;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 24px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 8px;
+    background: $yellow;
+}
